@@ -1,7 +1,7 @@
 # INTIAL KILA PROJECT: JAKE AND DON
 # Titanic: a fun decryption of who got to die!!
 # import data from source for analysis "if data is in text format remember to declare (header=True)"
-titanic.raw <- read.csv("C:/users/Don Krieg/Documents/R/titanic/cleaned_tit/train1.csv")
+titanic.raw <- read.csv("C:/users/Don Krieg/Documents/R/titanic/cleaned_titan/train1.csv")
 
 # view data to ensure you have the right content loaded
 View(titanic.raw)
