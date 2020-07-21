@@ -18,6 +18,8 @@ titanic.raw$Parch <- as.factor(titanic.raw$Parch)
 
 xtabs(~Survived + Pclass, data = titanic.raw)
 
+prop.table(table(titanic.raw$Survived))
+
 titanic.model = glm(Survived ~ Sex, data = titanic.raw, family = binomial())
 summary(titanic.model)
 
@@ -44,3 +46,5 @@ ggplot(data = predicted.titanic , aes(x=rank, y=probability.of.survive)) +
   ylab("Predicted probability of surviving")
 
 ggsave("Titanic_Survival_Probablilities.pdf")
+
+
