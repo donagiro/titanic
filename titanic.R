@@ -25,9 +25,9 @@ titanic.raw$Pclass <- as.factor(titanic.raw$Pclass)
 titanic.raw$SibSp <- as.factor(titanic.raw$SibSp)
 titanic.raw$Parch <- as.factor(titanic.raw$Parch)
 
-# xtabs is use for pulling two columns showing us there stats on a two way table
+# xtabs is use for pulling two columns showing us their stats on a two way table
 # one thing xtabs are useful for is they help show us that the various columns being analyzed have 
-# a good representation e.g at least 30 samples per column or whatever you deem a useful no. of samples
+# a good representation e.g at least 30 samples per column or whatever you deem a useful #no of samples
 # the first xtab(two way table) compares the gender(sex) against the survival data
 xtabs(~Survived + Sex, data = titanic.raw)
 
